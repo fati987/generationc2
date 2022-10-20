@@ -36,6 +36,24 @@
         imprimirImpar(num_impar);
         console.log("nuevo numero_impar", num_impar);
         
+        //returm
+        function multiplacion(numero1, numero2){
+            return numero1*numero2;
+        }
+        var resultadoMultiplacion=multiplacion(34,76);
+        console.log("El resultado es",resultadoMultiplacion);
+
+        function crearNuevoArreglo(numero3){
+            var arreglo = [];//[0,1,2]
+            for(let i=0; i <= numero3;i++){
+                arreglo.push(i);
+            }
+            return arreglo;
+        }
+        var numeroIngresado= parseInt(prompt("ingresa un numero",0));
+        var miArreglo = crearNuevoArreglo(numeroIngresado);
+        console.log("mi arreglo",miArreglo);
+
         </script>
 </body>
 </html>
