@@ -39,10 +39,29 @@
     /*● Se desea tener una función verificadora encargada de revisar si dentro de el arreglo de
     valores de los productos a comprar no existan valores negativos ingresados por error,
     en caso de no existir debe retornar un mensaje de éxito, en caso contrario debe retornar
-    un mensaje de error junto con el número negativo y el índice en el que se encontraba.
-    ● Dado el siguiente arreglo [200,5500,900,7000,500,300] con los valores de cada
-    producto*/
+    un mensaje de error junto con el número negativo y el índice en el que se encontraba.*/
 
+    /*● Dado el siguiente arreglo [200,5500,900,7000,500,300] con los valores de cada
+    producto
+    Crea una función que retorne el valor del producto más costoso.
+    Crea una función que retorne el valor del producto menos costoso.*/
+    var arregloValores = [200,5500,900,7000,500,300];
+    var mayorValor = 0;
+    var menorValor = 0;
+
+    for(let i=0; i<arregloValores.length; i++){
+        if(mayorValor < arregloValores[i]){
+            mayorValor=arregloValores[i];
+        }
+    }
+    console.log(`El mayor valor es: ${mayorValor}`);
+
+    for(let i=0; i<arregloValores.length; i++){
+        if(menorValor > arregloValores[i]){
+            menorValor=arregloValores[i];
+        }
+    }
+    console.log(`El menor valor es: ${menorValor}`);
     </script>
 </body>
 </html>
